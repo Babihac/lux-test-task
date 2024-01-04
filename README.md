@@ -1,13 +1,14 @@
 # Description
 
 Test task containing server and client for guess a word game
-I could only tested it on darwin/arm64, but I created build with this configuration:
+I developed this task on darwin/arm64, but I created build with this configuration:
 
 ```bash
  GOOS=linux GOARCH=amd64  go build -o
 ```
 
-which should work on requested system. I also set Go version to 1.18, which was the default version after running apt install golang in Ubuntu container
+Which I tested on EC2 instance with ubuntu 22.04 and required architecture (If you wish, you can use this for comfortable testing, I can send you key and IP :)
+I also set Go version to 1.18, which was the default version after running apt install golang in Ubuntu EC2
 
 ## Installation
 
