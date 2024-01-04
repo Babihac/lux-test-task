@@ -1,7 +1,7 @@
 # Description
 
 Test task containing server and client for guess a word game
-I could only tested it on Linux with ARM64, but I created build with this configuration:
+I could only tested it on darwin/arm64, but I created build with this configuration:
 
 ```bash
  GOOS=linux GOARCH=amd64  go build -o
@@ -23,15 +23,15 @@ Start the server_app.
 
 ```bash
 #check flags ./server_app -help
-./server_app -pswd=YOUR_PASSWORD
+./server_app_x86 -pswd=YOUR_PASSWORD
 ```
 
 start some clients
 
 ```bash
 #check flags ./client_app -help
-./client_app -type=tcp
-./client_app -type=unix
+./client_app_x86 -type=tcp
+./client_app_x86 -type=unix
 ```
 
 You must enter the server's password and after that, server sends you your ID. Now you can start a game
